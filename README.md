@@ -98,7 +98,7 @@ Adicional: el form deberá desaparecer cuando des el click submit (recuerda util
 
 Genera un componente `Search` para realizar búsquedas
 
-![](https://imgur.com/z942w3a)
+![](https://imgur.com/76zNUkW)
 
 
 ### Todas las iteraciones deben mostrarse en una pantalla que pueda ser reflejada en el localhost
