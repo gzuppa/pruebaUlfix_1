@@ -79,4 +79,30 @@ value="1"
 ```
 
 Al final deberás obtener algo parecido a lo siguiente:
+
 ![](https://i.imgur.com/bY9i5Rw.png)
+
+### Segunda prueba | Mostrar todos los alimentos como iteración
+
+En el componente `App`, deberás mostrar todos los elementos `FoodBox` que existen en tu variable `foods` (tip: utiliza correctamente las props)
+
+Al final deberás mostrar algo como lo siguiente:
+
+![](https://i.imgur.com/3TVQJDO.png)
+
+### Tercer prueba | Agregar un nuevo alimento
+
+Crea un botón para agregar elementos.
+Cuando des click deberá aparecer un form con los campos "nombre", "número de calorías" y una imagen
+Cuando el usuario de click en el botón que tenga la propiedad onClick submit, el alimento deberá ser agregado a la lista (tip: si tu modelo está correcto, esto será sumamente sencillo)
+Adicional: el form deberá desaparecer cuando des el click submit (recuerda utilizar los componentDidMount, etcétera)
+
+### Cuarta prueba | Crear una barra de búsqueda 
+
+Genera un componente `Search` para realizar búsquedas
+
+![](https://i.imgur.com/XaOpAx8.png)
+
+
+### Todas las iteraciones deben mostrarse en una pantalla que pueda ser reflejada en el localhost
+# ¡Éxito!
