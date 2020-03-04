@@ -3,9 +3,6 @@
 
 Para esta prueba tendrás que crear una pequeña app con un CRUD para mostrar en pantalla un catálogo de comidas con sus aportes alimenticios
 
-Al final, deberás mostrar algo parecido a lo siguiente:
-![](https://media.giphy.com/media/fH0dyqpPJRvTbiF5rJ/giphy.gif)
-
 ## Requerimientos (será necesario que tengas una cuenta de git, en caso de no tenerla abrirla para evaluar los conocimientos en control de versiones)
 
 - Hacer fork a este repositorio
@@ -101,7 +98,7 @@ Adicional: el form deberá desaparecer cuando des el click submit (recuerda util
 
 Genera un componente `Search` para realizar búsquedas
 
-![](https://drive.google.com/open?id=14CyDSHAx0lQ_pj90cEEIFIFrKvNN7DWT)
+![](https://imgur.com/z942w3a)
 
 
 ### Todas las iteraciones deben mostrarse en una pantalla que pueda ser reflejada en el localhost
