@@ -1,5 +1,5 @@
 # Prueba técnica Ulfix
-# CRUD React
+# CRUD React / Conexión a API
 
 Para esta prueba tendrás que crear una pequeña app con un CRUD para mostrar en pantalla un catálogo de comidas con sus aportes alimenticios
 
@@ -102,4 +102,47 @@ Genera un componente `Search` para realizar búsquedas
 
 
 ### Todas las iteraciones deben mostrarse en una pantalla que pueda ser reflejada en el localhost
-# ¡Éxito!
+
+
+# Conexión a api
+### Primer prueba | Crear una vista dinámica para la prueba de conexión a API
+
+Deberás crear en el routing una nueva vista a la que puedas acceder desde un link y que tenga regreso a la vista principal. En esa vista desarrollarás lo siguiente.
+
+Para esta prueba será necesario generar un chart utilizando las siguientes herramientas:
+
+API | Coindesk [CoinDesk](http://www.coindesk.com/) 
+Para este ejercicio deberás conectarte a la API de Coindesk con los datos de [Bitcoin Price Index](https://web.archive.org/web/20191106152143/https://www.coindesk.com/api). Requeriremos que realices la representación de dichos datos de manera programática.
+
+Representación gráfica | [Chart.js](http://www.chartjs.org/) 
+
+# Instrucciones
+Al final, deberás representar algo parecido a lo siguiente
+
+![](https://s3-eu-west-1.amazonaws.com/ih-materials/uploads/upload_b94d2137d3737b49ecf92ee8709f5a14.png)
+
+## Primer iteración: Obtener data del API
+
+Primero deberás obtener la data de la API para ser representada en el chart. Para ello utilizaremos la siguiente API [CoinDesk API Documentation](https://web.archive.org/web/20191106152143/https://www.coindesk.com/api)
+
+Tendrás que hacer una presentación del histórico de datos en el chart haciendo una petición `GET` hacia la siguiente URL `http://api.coindesk.com/v1/bpi/historical/close.json` (puedes utilizar testing en Postman). El response deberá ser un objeto json.
+
+Deberás realizar un AJAX request por lo tanto es necesario que importes el CDN de Axios.
+TIP: Para probar tu request a la URL utiliza un `console.log()` para estar seguro de la petición.
+
+## Segunda iteración: Crear el chart
+
+Una vez que la petición sea exitosa, deberás mostrar el chart en la vista. Usaremos [Chart.js](http://www.chartjs.org/) por lo que será necesario que agregues el CDN.
+Una vez agregada la referencia CDN deberás representar la información obtenida en el json del paso 1 en un [Line Chart](http://www.chartjs.org/docs/#line-chart-introduction)
+
+## Tercer iteración: Filtrar fechas
+
+Como puedes observar, por default, la API proporciona los datos del último mes. En esta iteración agregarás dos `input` de fecha para poder hacer ese filtro.
+Revisa la documentación de [CoinDesk API](https://web.archive.org/web/20191106152143/https://www.coindesk.com/api) para ver como obtener datos entre dos fechas.
+Recuerda que la información debe cambiar cada que eliges dos fechas distintas por lo que te recomendamos agregar listeners o triggers en tu función.
+
+# Login
+
+Tendrás que crear un login básico (si utilizas librerías como jsonwebtoken o bcrypt es un plus) en el que integres la autentificación con Google. Deberá contar con un logout y si incluyes algún rol de usuario o super usuario será un excelente bonus.
+
+## En total son tres actividades: CRUD, conexión a API y Login. Siéntete libre de utilizar algun framework para Front End diferente al sugerido. Asimismo, cualquier adicional que desees integrar en los ejercicios será muy bien valorado. Mucho éxito.
